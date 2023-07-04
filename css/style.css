@@ -1,0 +1,74 @@
+/*paleta de colores*/
+:root{
+    --blanco: #ffffff;
+    --negro:#212121;
+    --primario:#ffc107;
+    --secundario:#0097a7;
+    --gris:#757575;
+    --fondoGris:#dfe9f3;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,*:before, *:after {
+    box-sizing: inherit  
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+
+
+h1{
+    font-size: 3.8rem;
+    text-align: center;
+}
+h2{
+    font-size: 2.8rem;
+    text-align: center;
+}
+h3{
+    font-size: 2.8rem;
+    text-align: center;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+.titulo{
+    color:var(--negro);
+    text-transform:capitalize;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+
+    width: 100%;
+}
+.navegacionPricipal{
+    display: flex;
+    flex-direction: column;
+   
+}
+@media (min-width:768px){
+    .navegacionPricipal{
+        flex-direction: row;
+        justify-content:space-between;
+    }
+}
+.navegacionPricipal a{
+    color: var(--blanco);
+    font-size: 3rem;
+   padding: 1rem;
+   text-decoration: none;
+   text-transform:capitalize;
+}
+.navegacionPricipal a:hover{
+        color: var(--blanco);
+}
